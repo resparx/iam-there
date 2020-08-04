@@ -5,13 +5,14 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import { SmileOutlined } from '@ant-design/icons';
 
 const Background = styled.div`
   height: 100vh;
-  /* width: 100vw; */
+  width: 100vw;
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+  animation: gradient 10s ease infinite;
 
   @keyframes gradient {
 	0% {
@@ -22,21 +23,37 @@ const Background = styled.div`
 	}
 	100% {
 		background-position: 0% 50%;
-	}
+  }
 }
+
+h1, p {
+    text-align: center;
+  }
+`
+
+const OverLay = styled.div`
+background: rgba(0,0,0,0.4);
+height: 100vh;
+width: 100vw;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+
+`
+
+const Smiley = styled(SmileOutlined)`
+font-size: 24px;
 `
 
 const IndexPage = () => (
   <Layout>
     <Background>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      {/* <Image /> */}
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
+    <OverLay>
+    <h1>Hey babe <i class="far fa-kiss-wink-heart"></i></h1>
+    <p>I feel it's hard for you<br/> and I just wanted to give something for you </p>
+    </OverLay>
+    
     </Background>
   </Layout>
 )

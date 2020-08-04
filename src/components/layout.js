@@ -7,10 +7,21 @@
 
 import React from "react"
 import PropTypes from "prop-types"
+import styled from 'styled-components';
 import { useStaticQuery, graphql } from "gatsby"
+import { HeartTwoTone } from '@ant-design/icons';
 
 import Header from "./header"
 import "./layout.css"
+
+
+const Footer = styled.footer`
+position: absolute;
+bottom: 12px;
+text-align: center;
+width: 100%;
+
+`
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -24,7 +35,12 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <main>{children}</main>
+    <>
+        <main>{children}</main>
+        <Footer>
+          made with <HeartTwoTone twoToneColor="#eb2f96" /> by Raammmmmm....!
+        </Footer>
+    </>
   )
 }
 
