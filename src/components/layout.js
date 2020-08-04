@@ -43,7 +43,7 @@ const Layout = ({ children }) => {
       </Helmet>
       <main>{children}</main>
       <Footer>
-        made with <HeartTwoTone twoToneColor="#eb2f96" /> by Rammmmmm....!
+        made with <i class="fab fa-react"></i> by Rammmmmm....!
         </Footer>
     </>
   )

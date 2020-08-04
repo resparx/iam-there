@@ -111,7 +111,7 @@ const IndexPage = () => {
     <Background>
     <OverLay>
     {!showHeadPhone && <Cont1 showHeadPhone={showHeadPhone}>
-    <h1>Hey babe <i class="far fa-kiss-wink-heart"></i></h1>
+    <h1>Hey Nisha </h1>
     <p>I feel it's hard for you<br/> and I just wanted to try something to <br/> make you feel better <i class="far fa-laugh-beam"></i> </p>
     </Cont1>}
     <Cont2 showHeadPhone={showHeadPhone}>
