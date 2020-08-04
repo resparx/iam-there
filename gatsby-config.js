@@ -26,23 +26,6 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/images/lipstick.png`, // This path is relative to the root of the site.
       },
-    },
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
-          {
-            resolve: 'gatsby-remark-audio',
-            options: {
-              preload: 'auto',
-              loop: false,
-              controls: true,
-              muted: false,
-              autoplay: false
-            }
-          }
-        ]
-      }
     }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
