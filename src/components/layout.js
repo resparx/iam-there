@@ -38,7 +38,7 @@ const Layout = ({ children }) => {
     <>
         <main>{children}</main>
         <Footer>
-          made with <HeartTwoTone twoToneColor="#eb2f96" /> by Raammmmmm....!
+          made with <HeartTwoTone twoToneColor="#eb2f96" /> by Rammmmmm....!
         </Footer>
     </>
   )
