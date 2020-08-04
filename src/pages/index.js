@@ -114,10 +114,10 @@ const IndexPage = () => {
     <h1>Hey Nisha </h1>
     <p>I feel it's hard for you<br/> and I just wanted to try something to <br/> make you feel better <i class="far fa-laugh-beam"></i> </p>
     </Cont1>}
-    <Cont2 showHeadPhone={showHeadPhone}>
+    {showHeadPhone && <Cont2 showHeadPhone={showHeadPhone}>
     <i class="fas fa-headphones-alt"></i>
     <p>Connect your headphones</p>
-    </Cont2>
+    </Cont2>}
     </OverLay>
     <audio autoplay loop>
       <source src="johann_sebastian_bach_air.mp3"/>
